@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Офіційний портал</title>
+    <link rel="preconnect" href="https://fon<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+ts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+ 
+  </head>
+  <body class="min-h-dvh bg-brand-paper text-brand-ink antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white px-3 py-2 rounded-md shadow">Пропустити до основного</a>
+
+    <header id="siteHeader" class="fixed top-0 inset-x-0 z-50 bg-brand-green text-white transition-transform duration-300">
+      <div class="container flex h-14 items-center justify-between">
+        <a href="#hero" class="flex items-center gap-2">
+          <img src="/logo.png" alt="Логотип" class="site-logo animate-logo" />
+          <span class="font-semibold">Офіційний портал</span>
+        </a>
+        <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl ring-1 ring-white/20 bg-white/5 backdrop-blur-sm transition-all active:scale-95">
+          <span class="sr-only">Меню</span>
+          <div class="burger"><span></span><span></span><span></span></div>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobileNav" class="fixed inset-0 z-[60] hidden">
+      <div id="mobileBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
+      <div id="mobileSheet" class="relative z-10 mx-auto mt-20 w-[92%] max-w-sm rounded-3xl bg-white/95 p-4 ring-1 ring-brand-border shadow-lg backdrop-blur-md transition-all duration-300 opacity-0 scale-95 translate-y-4">
+        <div class="grid gap-3">
+          <a href="#hero" class="menu-link btn-nav opacity-0 translate-y-2">Головна <span class="chev">→</span></a>
+          <a href="#about" class="menu-link btn-nav opacity-0 translate-y-2">Про нас <span class="chev">→</span></a>
+          <a href="#benefits" class="menu-link btn-nav opacity-0 translate-y-2">Наші переваги <span class="chev">→</span></a>
+          <a href="#process" class="menu-link btn-nav opacity-0 translate-y-2">Як ми працюємо? <span class="chev">→</span></a>
+          <a href="#services" class="menu-link btn-nav opacity-0 translate-y-2">Наші послуги <span class="chev">→</span></a>
+          <a href="#categories" class="menu-link btn-nav opacity-0 translate-y-2">Категорії <span class="chev">→</span></a>
+          <a href="#contacts" class="menu-link btn-nav opacity-0 translate-y-2">Контакти <span class="chev">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="mt-14 space-y-10 md:space-y-12">
+      <section id="hero" class="container pt-4">
+        <div class="reveal hero-slab relative overflow-hidden rounded-3xl ring-1 ring-brand-border min-h-[420px] bg-cover bg-center" data-reveal="auto" style="background-image:url('/fon.png')">
+          <div class="absolute inset-0 bg-black/15"></div>
+          <div class="relative z-10 p-6 md:px-[10%] md:py-[8%]">
+            <div class="relative mx-auto max-w-[820px]">
+              <div class="pointer-events-none absolute -inset-4 rounded-[40px] bg-[radial-gradient(600px_200px_at_10%_0%,rgba(255,255,255,.25),transparent)]"></div>
+              <div class="hero-bubble rounded-[32px] bg-brand-green/90 p-6 md:p-10 text-white ring-1 ring-white/10 shadow-[0_12px_40px_rgba(0,0,0,.25)] backdrop-blur-[2px]">
+                <h1 class="text-3xl md:text-5xl font-semibold leading-tight text-elevate">Офіційні права з гарантією — оплата при отримані.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section id="about" class="container">
+  <div class="reveal relative overflow-hidden rounded-3xl ring-1 ring-brand-border p-0" data-reveal="auto">
+    <div class="absolute inset-0 bg-cover bg-center"
+         style="background-image:
+           linear-gradient(to bottom, rgba(246,247,248,.22), rgba(246,247,248,.92)),
+           radial-gradient(800px 300px at -10% -20%, rgba(0,128,0,.08), transparent),
+           radial-gradient(500px 240px at 110% 120%, rgba(74,123,45,.08), transparent),
+           url('/fon2.png');">
+    </div>
+
+    <div class="relative p-6 md:p-8">
+      <div class="flex items-center gap-3">
+        <div class="grid h-12 w-12 place-items-center rounded-2xl bg-brand-olive/10 ring-1 ring-brand-olive/20 animate-float">
+          <svg viewBox="0 0 24 24" class="h-6 w-6 text-brand-olive"><path fill="currentColor" d="M12 12a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 12 12Zm-7 8a7 7 0 0 1 14 0Z"/></svg>
+        </div>
+        <span class="text-sm font-semibold text-brand-olive/90">Про сервіс</span>
+      </div>
+
+      <h2 class="mt-4 text-center text-2xl md:text-3xl font-semibold"></h2>
+      <p class="mx-auto mt-4 max-w-[62ch] text-base md:text-lg leading-7 text-gray-700">
+        Працюємо без вихідних. Ваші терміни — наш головний пріоритет. Підтримуємо на кожному етапі. Експерти завжди готові відповісти на будь-яке запитання й проконтролювати процес до отримання готового документа. Гарантуємо конфіденційність. Ваші дані під надійним захистом — ми цінуємо вашу довіру.
+      </p>
+
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-2">
+        <span class="chip ripple" data-reveal="auto"><span class="dot"></span>24/7</span>
+        <span class="chip ripple" data-reveal="auto"><span class="dot"></span>Конфіденційність</span>
+        <span class="chip ripple" data-reveal="auto"><span class="dot"></span>Підтримка</span>
+        <span class="chip ripple" data-reveal="auto"><span class="dot"></span>Гарантія</span>
+      </div>
+    </div>
+
+    <div class="relative px-6 pb-6 md:px-8 md:pb-8">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="reveal card p-4" data-reveal="auto">
+          <div class="text-xs text-gray-500">Середній час відповіді</div>
+          <div class="mt-1 text-lg font-semibold text-brand-olive">~15 хв</div>
+        </div>
+        <div class="reveal card p-4" data-reveal="auto">
+          <div class="text-xs text-gray-500">Рейтинг задоволеності</div>
+          <div class="mt-1 text-lg font-semibold text-brand-olive">4.9/5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="benefits" class="container">
+  <div class="reveal relative overflow-hidden rounded-3xl ring-1 ring-brand-border p-6" data-reveal="auto">
+    <div class="absolute inset-0 bg-cover bg-center"
+         style="background-image:
+           linear-gradient(to bottom, rgba(246,247,248,.32), rgba(246,247,248,.92)),
+           radial-gradient(900px 320px at -20% -10%, rgba(0,128,0,.08), transparent),
+           radial-gradient(600px 260px at 120% 110%, rgba(74,123,45,.08), transparent),
+           url('/fon3.png');">
+    </div>
+
+<div class="relative mt-4 overflow-hidden rounded-3xl">
+      <h2 class="reveal section-title text-center" data-reveal="auto">Наші переваги</h2>
+
+      <div class="relative mt-4">
+        <div id="benefitTrack" class="no-scrollbar snap-x snap-mandatory overflow-x-auto scroll-smooth -mx-4 px-4 pb-3 flex gap-4">
+          <article class="benefit-item reveal benefit-card snap-center shrink-0 w-[88%] sm:w-[420px] p-5" data-reveal="auto">
+            <div class="icon-wrap">
+              <iconify-icon icon="solar:clock-circle-bold-duotone" width="28" height="28" class="text-brand-green"></iconify-icon>
+            </div>
+            <h3 class="mt-3 text-xl font-semibold text-brand-ink text-center">Швидко</h3>
+            <p class="mt-1 text-center text-gray-600">Оформлення до 10 робочих днів з гарантією якості.</p>
+          </article>
+
+          <article class="benefit-item reveal benefit-card snap-center shrink-0 w-[88%] sm:w-[420px] p-5" data-reveal="auto">
+            <div class="icon-wrap">
+              <iconify-icon icon="solar:database-bold-duotone" width="28" height="28" class="text-brand-green"></iconify-icon>
+            </div>
+            <h3 class="mt-3 text-xl font-semibold text-brand-ink text-center">100% реєстрація</h3>
+            <p class="mt-1 text-center text-gray-600">Ваші дані в базі МВС — без жодних ризиків.</p>
+          </article>
+
+          <article class="benefit-item reveal benefit-card snap-center shrink-0 w-[88%] sm:w-[420px] p-5" data-reveal="auto">
+            <div class="icon-wrap">
+              <iconify-icon icon="solar:shield-check-bold-duotone" width="28" height="28" class="text-brand-green"></iconify-icon>
+            </div>
+            <h3 class="mt-3 text-xl font-semibold text-brand-ink text-center">Гарантія</h3>
+            <p class="mt-1 text-center text-gray-600">Легальність документів підтверджена офіційно.</p>
+          </article>
+
+          <article class="benefit-item reveal benefit-card snap-center shrink-0 w-[88%] sm:w-[420px] p-5" data-reveal="auto">
+            <div class="icon-wrap">
+              <iconify-icon icon="solar:headphones-round-sound-bold-duotone" width="28" height="28" class="text-brand-green"></iconify-icon>
+            </div>
+            <h3 class="mt-3 text-xl font-semibold text-brand-ink text-center">Підтримка 24/7</h3>
+            <p class="mt-1 text-center text-gray-600">Завжди на звʼязку — відповімо на будь-які питання.</p>
+          </article>
+
+          <article class="benefit-item reveal benefit-card snap-center shrink-0 w-[88%] sm:w-[420px] p-5" data-reveal="auto">
+            <div class="icon-wrap">
+              <iconify-icon icon="solar:wallet-2-bold-duotone" width="28" height="28" class="text-brand-green"></iconify-icon>
+            </div>
+            <h3 class="mt-3 text-xl font-semibold text-brand-ink text-center">Гнучкі оплати</h3>
+            <p class="mt-1 text-center text-gray-600">Оплата при отримані.</p>
+          </article>
+        </div>
+
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-white/80 to-transparent rounded-l-3xl"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-white/80 to-transparent rounded-r-3xl"></div>
+
+        <div class="mt-3 flex items-center justify-center gap-2">
+          <button id="benefitPrev" class="nav-btn"><iconify-icon icon="solar:alt-arrow-left-bold-duotone" width="18" height="18"></iconify-icon></button>
+          <div id="benefitDots" class="flex items-center gap-2"></div>
+          <button id="benefitNext" class="nav-btn"><iconify-icon icon="solar:alt-arrow-right-bold-duotone" width="18" height="18"></iconify-icon></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="process" class="container">
+  <div class="reveal relative overflow-hidden rounded-3xl ring-1 ring-brand-border p-0" data-reveal="auto">
+    <div class="absolute inset-0 bg-cover bg-center"
+         style="background-image:
+           linear-gradient(to bottom, rgba(246,247,248,.32), rgba(246,247,248,.92)),
+           radial-gradient(900px 320px at -20% -10%, rgba(0,128,0,.08), transparent),
+           radial-gradient(600px 260px at 120% 110%, rgba(74,123,45,.08), transparent),
+           url('/fon4.png');"></div>
+
+    <div class="relative p-6 md:p-8">
+      <h2 class="reveal text-2xl md:text-3xl font-semibold text-center" data-reveal="auto">Як ми працюємо?</h2>
+
+      <div class="sticky top-14 z-10 mt-4 mb-2">
+        <div class="h-1.5 w-full rounded-full bg-brand-olive/15">
+          <div id="procBar" class="h-1.5 w-[20%] rounded-full bg-brand-green transition-all"></div>
+        </div>
+      </div>
+
+      <div id="procList" class="space-y-4">
+        <article class="proc-card reveal bg-white" data-reveal="auto">
+          <button class="proc-head">
+            <span class="proc-icon">
+              <iconify-icon icon="ph:upload-simple-duotone" width="22" height="22"></iconify-icon>
+            </span>
+            <span class="proc-title">Надсилаєте документи</span>
+            <span class="proc-chev">⌄</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="text-gray-600">Передаєте базову інформацію — ми одразу запускаємо процес.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="proc-card reveal bg-brand-green/10" data-reveal="auto">
+          <div class="pointer-events-none absolute -right-10 bottom-0 h-24 w-44 rounded-tl-[120px] bg-white/70"></div>
+          <button class="proc-head">
+            <span class="proc-icon">
+              <iconify-icon icon="ph:files-duotone" width="22" height="22"></iconify-icon>
+            </span>
+            <span class="proc-title">Оформлення документів</span>
+            <span class="proc-chev">⌄</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="text-gray-600">Усі етапи — через автошколу та сервісний центр.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="proc-card reveal bg-white" data-reveal="auto">
+          <button class="proc-head">
+            <span class="proc-icon">
+              <iconify-icon icon="ph:seal-check-duotone" width="22" height="22"></iconify-icon>
+            </span>
+            <span class="proc-title">Підтвердження</span>
+            <span class="proc-chev">⌄</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="text-gray-600">Надаємо фото, відео та офіційне підтвердження в електронній базі.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="proc-card reveal bg-brand-green/10" data-reveal="auto">
+          <div class="pointer-events-none absolute -right-10 bottom-0 h-24 w-44 rounded-tl-[120px] bg-white/70"></div>
+          <button class="proc-head">
+            <span class="proc-icon">
+              <iconify-icon icon="ph:credit-card-duotone" width="22" height="22"></iconify-icon>
+            </span>
+            <span class="proc-title">Оплата при отриманні</span>
+            <span class="proc-chev">⌄</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="text-gray-600">Жодних передоплат — оплачуєте лише при отриманні.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="proc-card reveal bg-white" data-reveal="auto">
+          <button class="proc-head">
+            <span class="proc-icon">
+              <iconify-icon icon="ph:steering-wheel-duotone" width="22" height="22"></iconify-icon>
+            </span>
+            <span class="proc-title">Ви за кермом</span>
+            <span class="proc-chev">⌄</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="text-gray-600">Отримуєте посвідчення та їдете за власними правилами дорожнього руху.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="services" class="container">
+  <div class="srv-wrap reveal" data-reveal="auto">
+    <div class="srv-bg"></div>
+
+    <div class="srv-inner">
+      <div class="text-center">
+        <span class="srv-badge">
+          <iconify-icon icon="tabler:stars" width="16" height="16"></iconify-icon>
+          Послуги
+        </span>
+        <h2 class="srv-title">Наші послуги</h2>
+        <div class="srv-underline"></div>
+      </div>
+
+      <div class="srv-list">
+        <article class="svc-card glass">
+          <div class="svc-icon"><iconify-icon icon="tabler:id" width="22" height="22"></iconify-icon></div>
+          <h3 class="svc-h">Первинне отримання</h3>
+          <p class="svc-p">Перше посвідчення на 2 роки.</p>
+          <div class="svc-actions">
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn">Дізнатись</a>
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn svc-btn--primary">Замовити</a>
+          </div>
+        </article>
+
+        <article class="svc-card glass">
+          <div class="svc-icon"><iconify-icon icon="tabler:arrow-back-up" width="22" height="22"></iconify-icon></div>
+          <h3 class="svc-h">Відновлення за 130-ї статті</h3>
+          <p class="svc-p">Повне зняття обмежень.</p>
+          <div class="svc-actions">
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn">Дізнатись</a>
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn svc-btn--primary">Замовити</a>
+          </div>
+        </article>
+
+        <article class="svc-card glass">
+          <div class="svc-icon"><iconify-icon icon="tabler:hourglass" width="22" height="22"></iconify-icon></div>
+          <h3 class="svc-h">Заміна на 30 років</h3>
+          <p class="svc-p">Перше посвідчення на постійне.</p>
+          <div class="svc-actions">
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn">Дізнатись</a>
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn svc-btn--primary">Замовити</a>
+          </div>
+        </article>
+
+        <article class="svc-card glass">
+          <div class="svc-icon"><iconify-icon icon="tabler:id-badge-2" width="22" height="22"></iconify-icon></div>
+          <h3 class="svc-h">Заміна посвідчення</h3>
+          <p class="svc-p">Заміна за строком або втратою.</p>
+          <div class="svc-actions">
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn">Дізнатись</a>
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn svc-btn--primary">Замовити</a>
+          </div>
+        </article>
+
+        <article class="svc-card glass">
+          <div class="svc-icon"><iconify-icon icon="tabler:ban" width="22" height="22"></iconify-icon></div>
+          <h3 class="svc-h">Скасування обмежень</h3>
+          <p class="svc-p">Після позбавлення до закінчення терміну.</p>
+          <div class="svc-actions">
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn">Дізнатись</a>
+            <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="svc-btn svc-btn--primary">Замовити</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="categories" class="container">
+  <div class="cats-wrap reveal" data-reveal="auto">
+    <div class="cats-bg"></div>
+
+    <div class="cats-inner">
+      <h2 class="cats-title text-center">Що ми можемо?</h2>
+      <div class="cats-underline"></div>
+
+      <div class="cats-grid">
+        <article class="cat-card glass reveal" data-reveal="auto">
+          <img src="/img1.png" alt="Категорія A" class="cat-photo">
+          <h3 class="cat-h">Категорія A</h3>
+          <p class="cat-sub">A1, A</p>
+          <p class="cat-p">Мотоцикли, мопеди та скутери до 50 куб.</p>
+          <a href="#" class="cat-btn cat-btn--primary">Отримайте</a>
+        </article>
+
+        <article class="cat-card glass reveal" data-reveal="auto">
+          <img src="/img2.png" alt="Категорія B" class="cat-photo">
+          <h3 class="cat-h">Категорія B</h3>
+          <p class="cat-sub">B1, B</p>
+          <p class="cat-p">Легкові авто до 3,5 т, до 8 пасажирів.</p>
+          <a href="#" class="cat-btn cat-btn--primary">Отримайте</a>
+        </article>
+
+        <article class="cat-card glass reveal" data-reveal="auto">
+          <img src="/img3.png" alt="Категорія C" class="cat-photo">
+          <h3 class="cat-h">Категорія C</h3>
+          <p class="cat-sub">C1, C, CE</p>
+          <p class="cat-p">Вантажні авто понад 3,5 т.</p>
+          <a href="#" class="cat-btn cat-btn--primary">Отримайте</a>
+        </article>
+
+        <article class="cat-card glass reveal" data-reveal="auto">
+          <img src="/img4.png" alt="Категорія D" class="cat-photo">
+          <h3 class="cat-h">Категорія D</h3>
+          <p class="cat-sub">D1, D</p>
+          <p class="cat-p">Автобуси понад 8 пасажирів.</p>
+          <a href="#" class="cat-btn cat-btn--primary">Отримайте</a>
+        </article>
+
+        <article class="cat-card glass reveal" data-reveal="auto">
+          <img src="/img5.png" alt="Спецтехніка" class="cat-photo">
+          <h3 class="cat-h">Спецтехніка</h3>
+          <p class="cat-sub">Трактори, будівельна техніка.</p>
+          <p class="cat-p">Під різні задачі та класи.</p>
+          <a href="#" class="cat-btn cat-btn--primary">Отримайте</a>
+        </article>
+
+        <article class="cat-card glass reveal" data-reveal="auto">
+          <img src="/img6.png" alt="Техпаспорт" class="cat-photo">
+          <h3 class="cat-h">Техпаспорт</h3>
+          <p class="cat-sub">Оформлення/дублікат.</p>
+          <p class="cat-p">Без власника, офіційно.</p>
+          <a href="#" class="cat-btn cat-btn--primary">Отримайте</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="license" class="container">
+  <div class="lic-wrap reveal" data-reveal="auto">
+    <div class="lic-inner">
+      <h2 class="lic-title text-center">Ліцензія</h2>
+      <div class="lic-underline"></div>
+
+      <article class="lic-card">
+        <div class="lic-icon">
+          <iconify-icon icon="tabler:certificate-2" width="22" height="22"></iconify-icon>
+        </div>
+
+        <h3 class="lic-name">ПП «АВТОШКОЛА „РЕСПЕКТ ДРАЙВ“»</h3>
+
+        <dl class="lic-dl">
+          <div class="lic-row"><dt>Код ЄДРПОУ:</dt><dd>43194827</dd></div>
+          <div class="lic-row"><dt>Дата витягу:</dt><dd>11 вересня 2021 р., 15:05</dd></div>
+          <div class="lic-row"><dt>Адреса:</dt><dd>01004, м. Київ, Крутий узвіз, буд. 6/2, літ. А</dd></div>
+          <div class="lic-row"><dt>Дата заснування:</dt><dd>28.08.2019</dd></div>
+          <div class="lic-row"><dt>Інші види діяльності:</dt><dd>професійно-технічна освіта; оренда авто</dd></div>
+        </dl>
+
+        <a href="https://opendatabot.ua" target="_blank" rel="noopener" class="lic-btn">Переглянути на OpenDataBot</a>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="telegram" class="container">
+  <div class="tg-zone reveal" data-reveal="auto">
+    <a href="https://t.me/manager_avto24" target="_blank" rel="noopener" class="tg-btn ripple">
+      <span class="tg-icon"><iconify-icon icon="mdi:telegram" width="20" height="20"></iconify-icon></span>
+      Написати в Telegram
+    </a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-row">
+      <p class="foot-copy">© <span id="year"></span> Офіційний портал</p>
+      <nav class="foot-links">
+        <a href="#">План сайту</a>
+        <a href="#">Політика конфіденційності</a>
+        <a href="#">Доступність</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a href="https://t.me/manager_avto24" target="_blank" rel="noopener"
+   class="tg-fab" aria-label="Написати в Telegram">
+  <iconify-icon icon="mdi:telegram" width="24" height="24"></iconify-icon>
+</a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
