@@ -203,3 +203,15 @@ document.querySelectorAll(".cat-btn,.cat-card").forEach(attachRipple);
 document.querySelectorAll(".lic-btn,.lic-card").forEach(attachRipple);
 document.querySelectorAll(".tg-btn").forEach(attachRipple);
 document.querySelectorAll(".tg-fab").forEach(attachRipple);
+function fbLead(label){ if (window.fbq) fbq('track','Lead',{content_name: label}); }
+document.querySelectorAll('a[data-fb-lead]').forEach(a=>{
+  a.addEventListener('click', (e)=>{
+    const label = a.getAttribute('data-fb-lead') || 'Lead';
+    fbLead(label);
+    if(a.target !== '_blank'){
+      e.preventDefault();
+      const url = a.href;
+      setTimeout(()=>{ window.location.href = url; }, 180);
+    }
+  });
+});
